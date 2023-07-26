@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 5px;
+    }
+
+    .header {
+      width: 100%;
+      height: 600px;
+            background-image: url('images/himal.jpg');
+      background-position: 50% 75%;
+      background-size: cover;
+      background-repeat: no-repeat;
+            position: relative;
+      overflow: hidden;
+    }
+    .headerm{
+  background-color: lightblue;
+  height: 500px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8a1410;
+  height: 90px;
+  font-size: 25px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+
+    .cloud {
+     background-image: url('http://pngimg.com/uploads/cloud/cloud_PNG32.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 50%;
+     height: 50%;
+     position: absolute;
+     top: 10px;
+     left: 0px;
+     animation-name: cloudmove;
+     animation-duration: 20s;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-fill-mode: backwards;
+    }
+
+    @keyframes cloudmove{
+      from {
+        left: 0px;
+      }
+      to {
+        left: 800px;
+      }
+    }
+
+    .header-text h1 {
+      position: absolute;
+      right: 300px;
+      top: 100px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      animation-name: movetagline;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: backwards;
+    }
+
+    @keyframes movetagline {
+      from {
+        right: 300px;
+      }
+      to {
+        right: 400px;
+      }
+    }
+
+    .header-text h2 {
+      position: absolute;
+      right: 200px;
+      top: 135px;
+      color: white;
+      text-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .column {
+      float: left;
+      width: 25%;
+      height: 500px;
+      padding: 20px;
+      border: 2px solid #fff;
+      background-color: #fcf8ec;
+      transition: transform 0.6s;
+     
+    }
+
+    .column:hover {
+      background-color: #79a3b1;
+      color: white;
+      transform: translate(-5px, -5px);
+    }
+
+    .content_column {
+      width: 50%;
+      height: auto;
+           border: 2px solid #fff;
+      float: left;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h2 {
+      font-family: 'Merienda One', cursive;
+    }
+
+    .team_column {
+      float: left;
+      width: 25%;
+      height: auto;
+      text-align: center;
+    }
+
+    .avatar {
+      vertical-align: middle;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      transition: transform 0.6s;
+    }
+
+    .avatar:hover{
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      transform: scale(1.2,1.2);
+    }
+
+    .footer {
+      width: 100%;
+            clear: both;
+    }
+
+    .footer_column {
+      width: 33.33%;
+      background-color: #30475e;
+      float: left;
+    }
+
+    .footer_column p {
+      color: white;
+      padding: 20px;
+         }
+
+    .footer_column a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer_column a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 992px) {
+      .column {
+        width: 50%;
+        background-color: #d0e8f2;
+      }
+
+      .content_column {
+        width: 100%;
+      }
+    }
+
+  
+    @media screen and (max-width: 700px) {
+
+      .header-text h1 {
+        right: 30px;
+        top: 200px;
+        text-align: center;
+      }
+
+      .header-text h2 {
+        right: 20px;
+        top: 230px;
+        text-align: center;
+      }
+
+      .column {
+        width: 100%;
+        background-color: #f4eeed;
+      }
+
+      .content_column {
+        width: 100%;
+      }
+
+
+      .team_column {
+        width: 100%;
+      }
+
+      .footer_column {
+        width: 100%;
+        border-bottom: 1px solid #fff;
+      }
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="cloud"> </div>
+    <div class="header-text">
+  
+
+
+
+        <div id="headerm">
+   
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="services.html">Services</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="reader2.html">Team Members</a></li>
+
+  </ul>
+  </div> 
+    </div>
+
+
+  </div>
+
+  <div class="row">
+
+    <div class="column">
+      <h2>Veer Lama</h2>
+            <p>As the team leader, I'm eager to guide our group as we develop a website that will highlight the rich and varied culture of Nepal. Our goal is to develop an aesthetically appealing and educational platform that promotes different facets of Nepali culture, such as customs, festivals, art, music, food, and more. Let's collaborate to make this website a useful tool for everyone looking to learn more about Nepal's rich cultural legacy.
+      work collaboratively, ensuring seamless communication among team members. Set realistic timelines for each task and regularly review the progress to meet the project's deadlines. </p>
+    </div>
+
+
+    <div class="column">
+      <h2> Pema Thapa</h2>
+            <p>Planning and research are the first steps we do in learning about Nepali culture. Gather facts from reputable publications, scholarly references, books, and legitimate websites. We can produce accurate and thorough information if we are aware of the subtleties of many ethnic groups, their customs, and festivals.
+              Cultural Sensitivity: It's important to be respectful of and sensitive to other cultures when we present Nepali culture. We'll steer clear of misrepresentation and make sure to capture the spirit of each cultural component.
+            </p>
+    </div>
+
+    <div class="column">
+      <h2>Nisha Pant </h2>
+          <p>Content Creation. Lay out the website's content structure based on our findings. Specific aspects, such as "Festivals of Nepal," "Traditional Arts and Crafts," "Cuisine," "Music and Dance," etc., might be given to each team member. Concentrate on writing compelling content that is search engine optimized and appealing to a broad readership.
+
+Visual Components a website devoted to culture should have eye-catching visuals. To improve the content, we'll require high-quality photos, videos, and graphics. To fascinate tourists, we might experiment with innovative ways to portray cultural themes through multimedia. </p>
+    </div>
+
+    <div class="column">
+      <h2>Gaurav Kharel</h2>
+      <p>Design a successful website requires an intuitive and user-friendly design. work on website designers to develop a layout that is eye-catching, simple to use, and optimized for both.
+        Fulfill the project's deadlines, we'll establish reasonable completion dates for each assignment and periodically assess the status.
+        Since culture is changing, our website ought to reflect that. To ensure that the website remains engaging and relevant over time, let's design a strategy for regular upgrades and new content additions.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="content_row">
+    <div class="content_column">
+       <h2>Devendra Chaudhary</h2>
+      <p style="padding: 20px;">
+        As a website designer, my main objective is to provide a platform that effectively reflects Nepal's rich and diverse culture while also being visually appealing and user-friendly. To make sure that users can quickly explore the website and take in the splendor of Nepali culture, I'll combine unique design components with a flawless user experience.
+Captivating visual design that captures Nepal's vitality and cultural diversity. I will arouse a sense of authenticity and cultural appeal by utilizing a symmetrical color scheme influenced by conventional components, such as prayer flags and beautiful artwork.
+
+Simple Navigation to guarantee a pleasant user experience, I create a simple navigation system that enables users to quickly explore various website parts. Users will be led to information on festivals, traditions, the arts, music, and more by simple, well-organized menus.
+
+  </p>
+
+    </div>
+
+     <div class="content_row">
+    <div class="content_column" style="background-color: #ffff;">
+      
+      <p style="padding: 20px;">
+        Multimedia Integration to create an engaging experience, I will thoughtfully include multimedia components including top-notch photos. For encourage users to engage more deeply with Nepali culture.
+
+Responsive build understanding the significance of mobile consumers, I build the website with a responsive layout to make sure it appears and works properly on a variety of platforms. I will emphasize the distinctiveness of each ethnic group, their customs, and the importance of festivals through visual storytelling.
+
+Cultural Symbolism the design will gain depth and meaning if it incorporates cultural symbols like mandalas, conventional patterns, and auspicious motifs. These images will quietly convey Nepali culture's spiritual core.
+
+Accessibility Considerations Reaching a varied audience requires inclusive design. I'll make sure the website complies with accessibility guidelines, enabling accessibility for users with impairments and adding alternative text to photos and multimedia.   
+Collaboration with the content team will be essential to seamlessly integrate the design and content. Together, we will create a cohesive and engaging narrative that showcases the beauty of Nepal's cultural heritage.
+
+Performance Optimization to enhance user experience, I will optimize the website's loading speed and performance. This includes compressing images, using efficient code, and leveraging caching techniques.
+
+Throughout the design process, I will seek feedback from users and conduct usability testing to identify areas for improvement. This iterative approach will help refine the design to meet user expectations and preferences.   </p>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div class="team_row">
+    <h2 style="padding: 20px; text-align: center;">:: Our Team ::</h2>
+    <div class="team_column">
+      <img src="images/lama.jpg" alt="Avatar" class="avatar">
+      <p style="font-weight: bold;"> Team Leader <br /> Veer Lama </p>
+    </div>
+
+    <div class="team_column">
+      <img src="images/mohan.jpg" alt="Avatar" class="avatar">
+      <p style="font-weight: bold;"> Planning and research<br/>Pema Thapa </p>
+    </div>
+
+    <div class="team_column">
+      <img src="images/nisha.jpg" alt="Avatar" class="avatar">
+      <p style="font-weight: bold;">Content Creation<br/> Nisha Pant</p>
+    </div>
+
+    <div class="team_column">
+      <img src="images/gaurav.jpg" alt="Avatar" class="avatar">
+      <p style="font-weight: bold;"> Design<br/>Gaurav Kharel</p>
+    </div>
+    
+
+
+  </div>
+
+  <div class="footer">
+    <div class="footer_column">
+      <div style="border-right: 1px solid #fff">
+        <h2 style=" font-family: 'Roboto', sans-serif; color:white; padding: 20px;"> ABOUT US</h2>
+
+        <p style="padding: 20px;">
+         We have a fantastic opportunity to combine our abilities and passion to create an engaging and educational platform as KCGI College students working on developing a website dedicated to displaying Nepali culture. Here are some ways that we can work together to make this initiative a success:
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="footer_column">
+
+      <div>
+        <h2 style=" font-family: 'Roboto', sans-serif; color:white; padding: 20px;"> </h2>
+        <ul style="padding: 20px; color:white; font-family: 'Roboto', sans-serif; list-style-type: none;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="reader2.html">Team Members</a></li>
+
+        </ul>
+      </div>
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>
